@@ -1,0 +1,41 @@
+body {
+  margin: 50px;
+}
+
+/* button style */
+.cus-btn,
+#delete,
+#reset {
+  height: 54px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon-size{
+  width: 16px;
+}
+
+/* try section notice */
+.validation {
+  text-align: center;
+  color: brown;
+}
+
+/* notification style */
+.notice {
+  text-align: center;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+#success,
+#failed {
+  display: none;
+}

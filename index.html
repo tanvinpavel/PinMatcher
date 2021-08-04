@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="card shadow border-0">
+                    <div class="card-body">
+                        <input type="text" class="form-control mb-3" id="pin"/>
+                        <input type="submit" id="PG_submit" class="btn btn-success" value="Generate"> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card shadow border-0">
+                    <div class="card-body">
+                        <input type="text" name="" id="typeDigit" class="form-control mb-3" readonly>
+                        <div class="row g-0 mb-3 justify-content-evenly">
+                            <div class="cus-btn col-3">7</div>
+                            <div class="cus-btn col-3">8</div>
+                            <div class="cus-btn col-3">9</div>
+                        </div>
+                        <div class="row g-0 mb-3 justify-content-evenly">
+                            <div class="cus-btn col-3">4</div>
+                            <div class="cus-btn col-3">5</div>
+                            <div class="cus-btn col-3">6</div>
+                        </div>
+                        <div class="row g-0 mb-3 justify-content-evenly">
+                            <div class="cus-btn col-3">1</div>
+                            <div class="cus-btn col-3">2</div>
+                            <div class="cus-btn col-3">3</div>
+                        </div>
+                        <div class="row g-0 mb-3 justify-content-evenly">
+                            <div id="delete" class="col-3">.</div>
+                            <div class="cus-btn col-3">0</div>
+                            <div id="reset" class="col-3">c</div>
+                        </div>
+                        <div class="row w-75 g-0 mx-auto">
+                            <input type="submit"  id="validatePin" class="form-control mt-3 btn-success"  value="submit">
+                            <div class="validation">
+                                <small><span id="step">3</span><span id="stepTitle"> try left</span></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div id="success" class="alert alert-success alert-dismissible notice">
+              <strong>Pin Matched...</strong> Secret door is opening for you
+            </div>
+            <div id="failed" class="alert alert-danger alert-dismissible notice">
+              <strong>Pin Didn't Match,</strong> Please try again
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
